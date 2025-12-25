@@ -3,4 +3,6 @@ module "vpc" {
   version = "7.5.2"
   tags = {
   Name = "master"
+  test = "test"
+
 }
