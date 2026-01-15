@@ -1,4 +1,7 @@
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  version = "6.5.4"
+resource "aws_vpc" "name" {
+  
+  cidr_block = "192.168.0.0/16"
+  tags = {
+    Name = "GitVPC"
+  }
 }
